@@ -1,0 +1,19 @@
+body { margin:0; padding:0; }
+main { width:100%; height: 100%;}
+#map {width: 100%; height: 500px;}
+#coordinates {background: #fff; padding: 10px;}
+#txtCoords {width: 100%; height: 100px;display: block;margin-bottom: 10px;}
+#messages {text-align: center;}
+.slideup {
+    animation-duration: 4s;
+    animation-name: slideup;
+}
+
+@keyframes slideup {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -100%, 0);
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>latlong</title> 
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+        <link href='style.css' rel='stylesheet' />
+    </head>
+    <body>
+        <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.4.10/leaflet.draw.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.4.10/leaflet.draw.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-geodesy/v0.1.0/leaflet-geodesy.js'></script>
+
+        <header>
+            <div id="coordinates">
+                <form class="pure-form">
+                    <fieldset>
+                        <legend>Coordinates</legend>
+                        <p>Example: -20,-20;-21,-21;</p>
+                        <textarea id="txtCoords"></textarea>
+                        <a href="#" id="lnkReset">create!</a>
+                    </fieldset>
+                </form>
+                <div id="messages"></div>
+            </div>
+        </header>
+        <main>
+            <div id="map"></div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
